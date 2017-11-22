@@ -1,0 +1,38 @@
+//Mixins
+@mixin custom-btn($color, $border, $border-radius,$background, $padding) {
+    background: $background;
+    border-radius: $border-radius;
+    border: 1px solid $border !important;
+    color: $color;
+    padding: $padding;
+    text-decoration:none;
+}
+@mixin font-weight($weight){
+    font-weight: $weight;
+}
+@mixin rotate($deg){ 
+    -webkit-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    transform: rotate($deg);
+}
+@mixin round-image($width, $height, $radius){
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+@mixin footer-link(){
+    color:#a6b8d2;
+    line-height:32px;   
+    text-decoration:none;
+    &:hover{
+        color: $color-white;
+    }
+}
+@mixin font-style($color, $font-weight, $line-height, $font-size){
+    color: $color;
+    font-weight:$font-weight;
+    line-height:$line-height;   
+    font-size:$font-size;
+}

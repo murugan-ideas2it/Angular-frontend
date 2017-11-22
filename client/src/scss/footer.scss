@@ -1,0 +1,44 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.footer-list-style{
+	list-style:none;
+	a{
+
+		@include footer-link();
+	}
+}
+.footer{
+	background-color:#324258;
+    color: #f0f6ff;
+    margin-top: auto;
+    overflow: hidden;
+    padding: 45px 0 80px;
+    .footer-logo{
+	    max-width: 160px;
+	    padding: 15px;
+	}
+	ul{
+		padding:0;
+		li{
+			@extend .footer-list-style;
+			a{
+				font-size:$font-12;
+			}
+		}
+	}
+	.social-links{
+		padding:0;
+		li{
+			display:inline-block;
+			padding: 0 10px;
+			@extend .footer-list-style;
+			a{
+				font-size:$font-20;
+			}
+			&:first-child{
+				padding: 0 10px 0 0;
+			}
+		}
+	}
+}
