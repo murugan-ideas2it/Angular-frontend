@@ -30,13 +30,11 @@ body{
 .content-box{
   width: $width-100;
   }
-
 .container-box{
   width: 1170px;
   margin: auto;
   padding: 5px;
 }
-
 .backlink-div{
   padding: 20px;
   .backlink{
@@ -57,22 +55,22 @@ body{
 }
 .width26{width: 26%}
 .width74{width: 74%}
-.inlineblock{display: inline-block;}
+.inlineblock{
+  display: inline-block;
+}
 .white-box-left{
   width: 59%;
  @extend .float-left;
   border-right: 2px solid #e5ecf2;
-  /*display: inline-block;*/
+  display: inline-block;
   .width26{
     padding: 20px 0;
   }
 }
-
-
 .white-box-right{
   width: 39%;
   @extend .float-right;
-  /*display: inline-block;*/
+  display: inline-block;
   table{
     padding: 1%;
     width: 100%;
@@ -300,9 +298,7 @@ body{
         text-decoration: none;
         color: $color-blue;
       }
-    }
-   
-   
+    }   
   }
 }
 .horizontal-line-div{

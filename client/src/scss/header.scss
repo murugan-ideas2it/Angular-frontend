@@ -4,13 +4,15 @@
   top: 0px;
   .div-row{
     width: $width-100;
-    display: flex;
+    display: inline-block;
     justify-content: space-between;
     .header-logo{
       display:inline-block;
+      float:left;
     }
     .header-menu{
       display:inline-block;
+      float:right;
     }
   }
 }

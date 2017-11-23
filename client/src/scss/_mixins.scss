@@ -36,3 +36,8 @@
     line-height:$line-height;   
     font-size:$font-size;
 }
+@mixin fullwidth-center($width_value, $margin_value, $align_value){
+    width: $width_value;
+    margin: $margin_value;
+    text-align:$align_value;
+}
