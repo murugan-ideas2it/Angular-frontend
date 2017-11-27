@@ -151,4 +151,31 @@
 		}
 	}
 	/*div{border:1px solid #333;}*/
+
+/*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+     /*Make dropdown links appear inline*/
+    .header-menu-list ul {
+       display: none;
+    }
+    input[type=checkbox]:checked ~ .header-menu #menu{
+	    padding: 0;
+	    text-align: center;
+	    margin-top: 60px;
+	}
+    .header .div-row .header-menu{
+    	float:none;
+    	display:block;
+    }
+    .header-menu-list ul li{
+    	display:block;
+    }
+    .header-menu-list ul li a{
+    	display:block;
+    }
+    .header-menu-list ul li a.blue-menu{
+    	color:#3c495a;
+    }
 }

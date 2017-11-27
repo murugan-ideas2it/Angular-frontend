@@ -39,3 +39,20 @@
     }
   }
 }
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+    width: 28px;
+    margin-right: 41px;
+    float:right;
+}
+/*Hide checkbox*/
+input[type=checkbox]{
+    display: none;
+}
+/*Show menu when invisible checkbox is checked*/
+input[type=checkbox]:checked ~ .header-menu #menu{
+    display: block;
+}
